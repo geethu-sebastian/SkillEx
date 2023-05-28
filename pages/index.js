@@ -1,14 +1,21 @@
-import { ConnectWallet } from "@thirdweb-dev/react";
-import styles from "../styles/Home.module.css";
+//import { ConnectWallet } from "@thirdweb-dev/react";
+
+//import styles from "../styles/Home.module.css";
+import Header from "./components/Header";
+import { Homepg } from "./components/Homepg";
+
+
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <div className={styles.connect}>
-          <ConnectWallet />
-        </div>
-      </main>
+    <div >
+ 
+    <Header/>
+   
+    <Homepg/>
+       
+       
+   
     </div>
   );
 }
