@@ -1,4 +1,7 @@
 import { ThirdwebProvider } from "@thirdweb-dev/react";
+import { metamaskWallet } from "@thirdweb-dev/react";
+import {Ethereum} from "@thirdweb-dev/chains";
+
 import "../styles/globals.css";
 
 // This is the chain your dApp will work on.
@@ -8,7 +11,8 @@ const activeChain = "ethereum";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThirdwebProvider activeChain={activeChain}>
+    <ThirdwebProvider supportedWallets={[metamaskWallet()]}
+    activeChain={activeChain} supportedChains={[Ethereum]}>
       <Component {...pageProps} />
     </ThirdwebProvider>
   );
