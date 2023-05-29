@@ -1,8 +1,9 @@
 //import { ConnectWallet } from "@thirdweb-dev/react";
 
 //import styles from "../styles/Home.module.css";
-import Header from "./components/Header";
-import { Homepg } from "./components/Homepg";
+import Header from "../components/Header";
+import { Homepg } from "../components/Homepg";
+
 
 
 

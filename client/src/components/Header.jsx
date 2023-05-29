@@ -1,6 +1,7 @@
 //import React from 'react'
 
 import { ConnectWallet } from "@thirdweb-dev/react"
+import Link from "next/link"
 
 //import logo from '../assets/logo.png'
 const Header = () => {
@@ -15,7 +16,7 @@ const Header = () => {
       <ul className=' md:flex-[0.5]  text-white md:flex hidden list-none justify-between items-center'>
       
       <li className='mx-8 cursor-pointer'>Explore</li>
-        <li className='mx-8 cursor-pointer'>Marketplace</li>
+        <li className='mx-8 cursor-pointer'><Link href="/pages/marketplace">Marketplace</Link></li>
         <li className='mx-8 cursor-pointer'>How it works</li>
         <li className=" justify-between items-center" >
         <ConnectWallet/>
